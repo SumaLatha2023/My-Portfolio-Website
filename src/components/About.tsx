@@ -55,7 +55,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="glass p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold gradient-text mb-2">15+</div>
-                <div className="text-sm text-foreground/70">Projects Completed</div>
+                <div className="text-sm text-foreground/70">Projects Worked</div>
               </div>
               <div className="glass p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold gradient-text mb-2">300+</div>
