@@ -11,21 +11,25 @@ interface Skill {
 const skillCategories = {
   Languages: [
     { name: "JavaScript", level: 90, icon: Braces },
-    { name: "TypeScript", level: 80, icon: FileJson },
-    { name: "HTML/CSS", level: 95, icon: Code2 },
+    { name: "C", level: 95, icon: Braces },
+    { name: "C++", level: 80, icon: Braces },
     { name: "Python", level: 75, icon: Terminal },
   ],
+  Databases: [
+      {name: "My SQL", level: 85, icon: Database},
+      { name: "MongoDB", level: 75, icon: Database },
+  ]
   Technologies: [
     { name: "Node.js", level: 75, icon: Laptop },
-    { name: "MongoDB", level: 75, icon: Database },
-    { name: "PostgreSQL", level: 70, icon: Database },
+    { name: "HTML", level: 95, icon: Code2 },
+    { name: "CSS", level: 95, icon: Code2 },
     { name: "REST APIs", level: 85, icon: Globe },
   ],
   "Frameworks & Libraries": [
     { name: "React", level: 85, icon: Code2 },
     { name: "Express", level: 70, icon: Laptop },
     { name: "Tailwind CSS", level: 90, icon: Palette },
-    { name: "Next.js", level: 75, icon: Globe },
+    { name: "Material UI", level: 90, icon: Palette },
   ],
   Tools: [
     { name: "Git & GitHub", level: 85, icon: GitBranch },
@@ -100,6 +104,9 @@ const Skills = () => {
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 glass">
               <TabsTrigger value="Languages" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                 Languages
+              </TabsTrigger>
+              <TabsTrigger value="Databases" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Databases
               </TabsTrigger>
               <TabsTrigger value="Technologies" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                 Technologies
