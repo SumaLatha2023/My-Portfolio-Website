@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Mail, MapPin, Phone, Send, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Instagram, Twitter } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -139,6 +140,30 @@ const Contact = () => {
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
               >
                 <Linkedin className="h-6 w-6" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+              >
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+              >
+                <MessageCircle className="h-6 w-6" />
               </a>
             </div>
           </div>
