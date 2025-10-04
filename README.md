@@ -6,7 +6,7 @@ Welcome to my **Portfolio Website**
 
 ## 🔗 Project URL
 
-**Live Demo:** [Portfolio Website](https://lovable.dev/projects/d6f91989-b92d-4a0e-9af9-4601f2dbd310)
+**Live Demo:** [Portfolio Website](https://sumalatha-salapu-portfolio.netlify.app/)
 
 ---
 
