@@ -12,14 +12,6 @@ dist
 dist-ssr
 *.local
 
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Ignore local resume if you don't want to commit it
-public/resume.pdf
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
