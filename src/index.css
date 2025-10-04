@@ -105,22 +105,6 @@ All colors MUST be HSL.
     opacity: 0;
   }
 
-  /* allow setting animation delay via CSS variable --delay (used by components) */
-  .animate-fadeInUp {
-    animation: fadeInUp 0.6s ease-out forwards;
-    animation-delay: var(--delay, 0s);
-    opacity: 0;
-  }
-
-  /* small delay utility classes (0 to 6 -> 0s to 0.6s) */
-  .delay-0 { --delay: 0s; }
-  .delay-1 { --delay: 0.1s; }
-  .delay-2 { --delay: 0.2s; }
-  .delay-3 { --delay: 0.3s; }
-  .delay-4 { --delay: 0.4s; }
-  .delay-5 { --delay: 0.5s; }
-  .delay-6 { --delay: 0.6s; }
-
   @keyframes fadeInUp {
     from {
       opacity: 0;

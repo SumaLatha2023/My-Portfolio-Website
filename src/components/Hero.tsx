@@ -3,7 +3,6 @@ import { Github, Linkedin, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const resumeUrl = "/resume.pdf";
   const [text, setText] = useState("");
   const fullText = "Turning ideas into interactive web experiences — Code. Create. Innovate.";
   const [index, setIndex] = useState(0);
@@ -49,8 +48,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-6 animate-fadeInUp">
-            <h2 className="text-4xl md:text-5xl text-foreground/80 mb-4">
-              Hi, I'm <span className="gradient-text font-bold">Sumalatha Salapu</span> 👋
+            <h2 className="text-xl md:text-2xl text-foreground/80 mb-4">
+              Hi, I'm <span className="gradient-text font-bold">Sumalatha</span> 👋
             </h2>
           </div>
 
@@ -61,43 +60,30 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center mb-8 animate-fadeInUp delay-3">
-            <Button
-              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 glow px-8 py-4 text-base md:text-lg"
-              onClick={() => window.open(resumeUrl, "_blank", "noopener,noreferrer")}
-            >
-              <Download className="mr-3 h-5 w-5" />
+          <div className="flex flex-wrap gap-4 justify-center mb-8 animate-fadeInUp" style={{ animationDelay: "0.3s" }}>
+            <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90 glow">
+              <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
-            <Button
-              variant="outline"
-              className="border-primary/50 hover:bg-primary/10 px-8 py-4 text-base md:text-lg"
-              onClick={() => {
-                const el = document.getElementById("contact");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-                else window.location.hash = "#contact";
-              }}
-            >
-              <Mail className="mr-3 h-5 w-5" />
+            <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
+              <Mail className="mr-2 h-4 w-4" />
               Contact Me
             </Button>
           </div>
 
-          <div className="flex gap-6 justify-center animate-fadeInUp delay-6">
+          <div className="flex gap-6 justify-center animate-fadeInUp" style={{ animationDelay: "0.6s" }}>
             <a
-              href="https://github.com/SumaLatha2023"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
               className="glass p-3 rounded-full hover:bg-primary/20 transition-all duration-300 hover:scale-110"
             >
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/sumalatha-salapu"
+              href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
               className="glass p-3 rounded-full hover:bg-primary/20 transition-all duration-300 hover:scale-110"
             >
               <Linkedin className="h-6 w-6" />

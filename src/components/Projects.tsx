@@ -12,42 +12,41 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "PetNook",
-    description: "A basic e-commerce platform showcasing pet products with a clean and user-friendly UI design.",
-    techStack: ["HTML", "CSS", "Canva"],
-    github: "https://github.com/SumaLatha2023/Petnook",
+    title: "E-Commerce Platform",
+    description: "A full-featured online shopping platform with cart functionality, payment integration, and admin dashboard.",
+    techStack: ["React", "Node.js", "MongoDB", "Stripe"],
+    github: "https://github.com",
   },
   {
-    title: "AI Text Summarizer",
-    description: "A web app that uses the Facebook BART CNN model to generate concise summaries from long texts.",
-    techStack: ["HTML", "CSS", "JavaScript", "API Integration"],
-    github: "https://github.com/SumaLatha2023/AI-Text-Summarizer",
-    demo: "https://replit.com/@sweetycodes/AI-Text-Summarizer-App",
+    title: "Task Management App",
+    description: "Collaborative task management tool with real-time updates, drag-and-drop interface, and team collaboration features.",
+    techStack: ["React", "Firebase", "Tailwind CSS"],
+    github: "https://github.com",
+    demo: "https://demo.com",
   },
   {
-    title: "Riddle Rush",
-    description: "A fun web app that generates random riddles using an external API for an engaging experience.",
-    techStack: ["HTML", "CSS", "JavaScript", "API"],
-    github: "https://github.com/SumaLatha2023/Riddle-Rush",
+    title: "Weather Dashboard",
+    description: "Real-time weather application with location-based forecasts, interactive maps, and weather alerts.",
+    techStack: ["JavaScript", "API Integration", "Chart.js"],
+    github: "https://github.com",
   },
   {
-    title: "Rock Paper Scissors",
-    description: "An interactive web-based game implementing the classic Rock-Paper-Scissors logic with clean visuals.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/SumaLatha2023/Rock-Paper-Scissors",
+    title: "Portfolio Generator",
+    description: "A tool that helps developers create beautiful portfolios with customizable templates and themes.",
+    techStack: ["React", "TypeScript", "CSS Modules"],
+    github: "https://github.com",
   },
   {
-    title: "Email Spam Detection",
-    description: "A machine learning app that detects and classifies spam messages using NLP and Streamlit.",
-    techStack: ["Python", "Scikit-learn", "NLTK", "Pandas", "Streamlit"],
-    github: "https://github.com/SumaLatha2023/Spam-Detection-App-python",
-    demo: "https://spam-mail-detection-app.streamlit.app/",
+    title: "Chat Application",
+    description: "Real-time messaging app with group chats, file sharing, and end-to-end encryption.",
+    techStack: ["React", "Socket.io", "Express", "MongoDB"],
+    github: "https://github.com",
   },
   {
-    title: "Amazon Clone",
-    description: "A front-end clone of Amazon’s homepage built to practice layout design and web styling techniques.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/SumaLatha2023/Amazon-UI",
+    title: "Blog Platform",
+    description: "Modern blogging platform with markdown support, comments, and social sharing features.",
+    techStack: ["Next.js", "Prisma", "PostgreSQL"],
+    github: "https://github.com",
   },
 ];
 
@@ -99,7 +98,8 @@ const Projects = () => {
               key={index}
               className={`glass p-6 rounded-2xl group hover:bg-primary/5 transition-all duration-300 hover:scale-105 ${
                 isVisible ? "animate-fadeInUp" : "opacity-0"
-              } ${"delay-" + Math.min(6, index)}`}
+              }`}
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2 gradient-text group-hover:text-accent transition-colors">
