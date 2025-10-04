@@ -124,12 +124,13 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex justify-between">
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+                aria-label="GitHub"
               >
                 <Github className="h-6 w-6" />
               </a>
@@ -138,6 +139,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+                aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
@@ -146,14 +148,16 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+                aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+                aria-label="X (formerly Twitter)"
               >
                 <Twitter className="h-6 w-6" />
               </a>
@@ -162,6 +166,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
+                aria-label="Discord"
               >
                 <MessageCircle className="h-6 w-6" />
               </a>
