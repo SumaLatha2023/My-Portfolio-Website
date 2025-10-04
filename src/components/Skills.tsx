@@ -43,6 +43,7 @@ const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [animatedSkills, setAnimatedSkills] = useState<{ [key: string]: boolean[] }>({
     Languages: new Array(skillCategories.Languages.length).fill(false),
+    Databases: new Array(skillCategories.Databases.length).fill(false),
     Technologies: new Array(skillCategories.Technologies.length).fill(false),
     "Frameworks & Libraries": new Array(skillCategories["Frameworks & Libraries"].length).fill(false),
     Tools: new Array(skillCategories.Tools.length).fill(false),
