@@ -1,68 +1,41 @@
 import { useEffect, useRef, useState } from "react";
 import developerAvatar from "@/assets/developer-avatar.png";
-
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.2
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
     };
   }, []);
-
-  return (
-    <section
-      id="about"
-      ref={sectionRef}
-      className="min-h-screen flex items-center py-20 relative overflow-hidden"
-    >
+  return <section id="about" ref={sectionRef} className="min-h-screen flex items-center py-20 relative overflow-hidden">
       <div className="absolute top-40 right-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-4">
-        <h2
-          className={`text-4xl md:text-5xl font-bold text-center mb-16 gradient-text ${
-            isVisible ? "animate-fadeInUp" : "opacity-0"
-          }`}
-        >
+        <h2 className={`text-4xl md:text-5xl font-bold text-center mb-16 gradient-text ${isVisible ? "animate-fadeInUp" : "opacity-0"}`}>
           About Me
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div
-            className={`${
-              isVisible ? "animate-slideInLeft" : "opacity-0"
-            }`}
-          >
+          <div className={`${isVisible ? "animate-slideInLeft" : "opacity-0"}`}>
             <div className="glass p-8 rounded-2xl">
-              <img
-                src={developerAvatar}
-                alt="Sumalatha - Developer"
-                className="w-full h-auto rounded-xl"
-              />
+              <img src={developerAvatar} alt="Sumalatha - Developer" className="w-full h-auto rounded-xl" />
             </div>
           </div>
 
-          <div
-            className={`space-y-6 ${
-              isVisible ? "animate-slideInRight" : "opacity-0"
-            }`}
-          >
+          <div className={`space-y-6 ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
             <div className="glass p-8 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 gradient-text">
                 Hello! I'm Sumalatha Salapu
@@ -84,19 +57,17 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="glass p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold gradient-text mb-2">10+</div>
+                <div className="text-3xl font-bold gradient-text mb-2">15+</div>
                 <div className="text-sm text-foreground/70">Projects Completed</div>
               </div>
               <div className="glass p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold gradient-text mb-2">5+</div>
-                <div className="text-sm text-foreground/70">Technologies Mastered</div>
+                <div className="text-3xl font-bold gradient-text mb-2">300+</div>
+                <div className="text-sm text-foreground/70">Problems Solved</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
