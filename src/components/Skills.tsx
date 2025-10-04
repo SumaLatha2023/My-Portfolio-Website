@@ -18,7 +18,7 @@ const skillCategories = {
   Databases: [
       {name: "My SQL", level: 85, icon: Database},
       { name: "MongoDB", level: 75, icon: Database },
-  ]
+  ],
   Technologies: [
     { name: "Node.js", level: 75, icon: Laptop },
     { name: "HTML", level: 95, icon: Code2 },
