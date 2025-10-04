@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-foreground/60">Email</div>
-                  <div className="font-medium">sumalatha.dev@email.com</div>
+                  <div className="font-medium">sumalathasalapu123@email.com</div>
                 </div>
               </div>
 
@@ -119,14 +119,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-foreground/60">Phone</div>
-                  <div className="font-medium">+91 XXXXX XXXXX</div>
+                  <div className="font-medium">+91 74162 73611</div>
                 </div>
               </div>
             </div>
 
             <div className="flex justify-between">
               <a
-                href="https://github.com"
+                href="https://github.com/SumaLatha2023"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
@@ -135,7 +135,7 @@ const Contact = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/sumalatha-salapu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
@@ -144,7 +144,7 @@ const Contact = () => {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/sumalatha_salapu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
@@ -153,7 +153,7 @@ const Contact = () => {
                 <Instagram className="h-6 w-6" />
               </a>
               <a
-                href="https://x.com"
+                href="https://x.com/Sumalatha_2004?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
@@ -162,7 +162,7 @@ const Contact = () => {
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="https://discord.com"
+                href="discordapp.com/users/sumalatha_salapu_30067"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-110"
@@ -187,7 +187,7 @@ const Contact = () => {
                 <Input
                   id="name"
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Abc Xyz"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="bg-secondary/50 border-primary/30 focus:border-accent"
@@ -201,7 +201,7 @@ const Contact = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="abc@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="bg-secondary/50 border-primary/30 focus:border-accent"

@@ -10,22 +10,22 @@ interface TimelineItem {
 
 const educationData: TimelineItem[] = [
   {
-    institution: "JNTUK University College of Engineering",
+    institution: "Andhra University College of Engineering",
     degree: "B.Tech - Computer Science Engineering",
-    duration: "2021 - 2025",
-    description: "Focused on web development, data structures, algorithms, and software engineering principles. Active in coding clubs and tech events.",
+    duration: "2022 - 2026",
+    description: "Current CGPA: 8.5/10",
   },
   {
-    institution: "Sri Chaitanya Junior College",
+    institution: "Narayana Junior College",
     degree: "Intermediate - MPC",
-    duration: "2019 - 2021",
-    description: "Completed with distinction. Developed strong foundation in mathematics and physics.",
+    duration: "2020 - 2022",
+    description: "Percentage: 97.4%",
   },
   {
-    institution: "Narayana High School",
+    institution: "Ravindra Bharathi School",
     degree: "Secondary School Education",
-    duration: "2018 - 2019",
-    description: "Achieved excellent grades. Developed early interest in computers and technology.",
+    duration: "2019 - 2020",
+    description: "CGPA: 10/10",
   },
 ];
 

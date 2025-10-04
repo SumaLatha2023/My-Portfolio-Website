@@ -36,10 +36,7 @@ const About = () => {
           </div>
 
           <div className={`space-y-6 ${isVisible ? "animate-slideInRight" : "opacity-0"}`}>
-            <div className="glass p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-4 gradient-text">
-                Hello! I'm Sumalatha Salapu
-              </h3>
+            <div className="glass p-8 rounded-2xl">           
               <p className="text-foreground/80 leading-relaxed mb-4">
                 I'm a final-year Computer Science Engineering student with a deep passion for 
                 web development and creating beautiful, interactive user experiences.
